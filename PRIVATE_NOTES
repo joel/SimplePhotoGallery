@@ -99,3 +99,7 @@ npx cap add @capacitor-community/electron
 ionic cap copy
 npx cap open @capacitor-community/electron
 
+# https://ionicframework.com/docs/react/your-first-app
+
+# React Capacitor 
+npm install @ionic/react-hooks @ionic/pwa-elements
