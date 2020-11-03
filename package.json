@@ -1,6 +1,7 @@
 {
   "name": "simple-ionic-7",
   "version": "0.0.1",
+  "homepage": "./",
   "private": true,
   "dependencies": {
     "@capacitor/android": "^2.4.2",
