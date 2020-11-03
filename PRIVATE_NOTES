@@ -80,6 +80,17 @@ ionic cap sync
 
 ionic cap open android
 
+# IOS
+ionic cap add ios
+
+# Copy files to targets (after each build)
+ionic cap copy
+
+# Otherwise 
+ionic cap sync
+
+ionic cap open ios
+
 # Electron
 npm i @capacitor-community/electron
 "@capacitor-community/electron": "^1.3.1",
