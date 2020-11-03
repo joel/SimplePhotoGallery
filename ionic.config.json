@@ -1,0 +1,7 @@
+{
+  "name": "simple-ionic-7",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "react"
+}
