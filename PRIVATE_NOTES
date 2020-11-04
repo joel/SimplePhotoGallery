@@ -109,3 +109,5 @@ npm install @ionic/react-hooks @ionic/pwa-elements
 # https://create-react-app.dev/docs/running-tests/
 
 npm test 
+
+# https://codesandbox.io/s/github/kentcdodds/react-testing-library-examples
