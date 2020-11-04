@@ -104,10 +104,26 @@ npx cap open @capacitor-community/electron
 # React Capacitor 
 npm install @ionic/react-hooks @ionic/pwa-elements
 
-# Test React 
+# Unit Test React, Jest 
 
 # https://create-react-app.dev/docs/running-tests/
 
 npm test 
 
 # https://codesandbox.io/s/github/kentcdodds/react-testing-library-examples
+
+# Integration test
+
+# https://docs.cypress.io/guides/getting-started/installing-cypress.html#npm-install
+
+npm install cypress --save-dev
++ cypress@5.5.0
+
+npx cypress open
+cypress run --record --key b7692b17-cae6-4e9d-8903-a01c5682105a
+
+https://medium.com/@gxcadr/cypress-recorder-write-cypress-tests-much-easier-and-faster-6ed70b712bff
+
+npm run cypress:open
+
+
