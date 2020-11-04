@@ -103,3 +103,9 @@ npx cap open @capacitor-community/electron
 
 # React Capacitor 
 npm install @ionic/react-hooks @ionic/pwa-elements
+
+# Test React 
+
+# https://create-react-app.dev/docs/running-tests/
+
+npm test 
