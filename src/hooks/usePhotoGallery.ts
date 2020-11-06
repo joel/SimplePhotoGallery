@@ -4,7 +4,6 @@ import { useFilesystem, base64FromPath } from '@ionic/react-hooks/filesystem';
 import { useStorage } from '@ionic/react-hooks/storage';
 import { isPlatform } from '@ionic/react';
 import { CameraResultType, CameraSource, CameraPhoto, Capacitor, FilesystemDirectory } from "@capacitor/core";
-import { createVariableDeclaration } from "typescript";
 
 export interface Photo {
     filepath: string;
@@ -15,12 +14,12 @@ const PHOTO_STORAGE = "photos";
 
 export function usePhotoGallery() {
     const [photos, setPhotos] = useState<Photo[]>([]);
-    
+
     const { get, set } = useStorage();
 
     const { getPhoto } = useCamera();
 
-    const { deleteFile, getUri, readFile, writeFile } = useFilesystem();
+    const { readFile, writeFile } = useFilesystem();
 
     useEffect(() => {
         const loadSaved = async () => {

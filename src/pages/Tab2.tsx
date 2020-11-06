@@ -1,5 +1,5 @@
 import React from 'react';
-import { camera, trash, close } from 'ionicons/icons';
+import { camera } from 'ionicons/icons';
 import {
   IonContent,
   IonHeader,
@@ -13,7 +13,6 @@ import {
   IonRow,
   IonCol,
   IonImg,
-  IonActionSheet,
 } from '@ionic/react';
 import { usePhotoGallery } from '../hooks/usePhotoGallery';
 import './Tab2.css';
