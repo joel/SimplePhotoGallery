@@ -54,5 +54,10 @@
     "@capacitor/cli": "2.4.2",
     "cypress": "^5.5.0"
   },
-  "description": "An Ionic project"
+  "description": "An Ionic project",
+  "jest": {
+    "transformIgnorePatterns": [
+      "node_modules/?!(react-hooks)"
+    ]
+  }
 }
