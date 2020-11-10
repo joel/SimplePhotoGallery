@@ -10,7 +10,8 @@ on:
 jobs:
   cypress-run:
     runs-on: ubuntu-16.04
-    container: cypress/browsers:node12.13.0-chrome78-ff70
+    # https://hub.docker.com/r/cypress/browsers/tags
+    container: cypress/browsers:node12.14.1-chrome85-ff81
     steps:
       - name: Checkout
         uses: actions/checkout@v1
