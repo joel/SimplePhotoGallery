@@ -20,13 +20,13 @@ jobs:
         uses: cypress-io/github-action@v2
         with:
           project: ./
-          env: host=localhost,port=3000
+          env: host=localhost,port=8100
           browser: chrome
           headless: true
           record: true
           parallel: true
-          start: npm start
-          wait-on: http://localhost:3000
+          start: ionic serve --port=8100 --browser=none
+          wait-on: http://localhost:8100
         env:
           CYPRESS_RECORD_KEY: ${{ secrets.CYPRESS_RECORD_KEY }}
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
