@@ -25,7 +25,7 @@ jobs:
           headless: true
           record: true
           parallel: true
-          start: ionic serve --port=8100 --browser=none
+          start: npm start
           wait-on: http://localhost:8100
         env:
           CYPRESS_RECORD_KEY: ${{ secrets.CYPRESS_RECORD_KEY }}
