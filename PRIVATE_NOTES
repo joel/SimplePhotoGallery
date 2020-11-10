@@ -47,7 +47,7 @@ npm upgrade @ionic/cli -g
 # https://ionicframework.com/docs/react/your-first-app
 
 # Create the App skeleton
-ionic start simple-ionic-6 tabs --type=react --capacitor
+ionic start simple-ionic-7 tabs --type=react --capacitor
 
 "@ionic/react": "^5.4.1",
 "@types/node": "^14.14.6",
