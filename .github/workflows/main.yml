@@ -6,6 +6,30 @@ on:
   pull_request:
     branches: [ main ]
 
+cypress-run:
+  runs-on: ubuntu-16.04
+  container: cypress/browsers:node12.13.0-chrome78-ff70
+  steps:
+    - name: Checkout
+      uses: actions/checkout@v1
+    # Install NPM dependencies, cache them correctly
+    # and run all Cypress tests
+    - name: Cypress run
+      uses: cypress-io/github-action@v2
+      with:
+        project: ./
+        env: host=localhost,port=3000
+        browser: chrome
+        headless: true
+        record: true
+        parallel: true
+        build: npm run build
+        start: npm start
+        wait-on: http://localhost:3000
+      env:
+        CYPRESS_RECORD_KEY: ${{ secrets.CYPRESS_RECORD_KEY }}
+        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+
 # A workflow run is made up of one or more jobs that can run sequentially or in parallel
 jobs:
   # This workflow contains a single job called "build"
@@ -15,7 +39,7 @@ jobs:
 
     strategy:
       matrix:
-        node-version: [10.x, 12.x, 14.x]
+        node-version: [12.x]
 
     # Steps represent a sequence of tasks that will be executed as part of the job
     steps:
