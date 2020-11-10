@@ -122,8 +122,10 @@ npm install cypress --save-dev
 npx cypress open
 cypress run --record --key b7692b17-cae6-4e9d-8903-a01c5682105a
 
-https://medium.com/@gxcadr/cypress-recorder-write-cypress-tests-much-easier-and-faster-6ed70b712bff
+# https://medium.com/@gxcadr/cypress-recorder-write-cypress-tests-much-easier-and-faster-6ed70b712bff
 
 npm run cypress:open
 
-
+# Continuous Integration with Github Actions and Cypress
+# https://andreybleme.com/2020-02-29/continuous-Integration-with-github-actions-and-cypress-end-to-end-tests/
+# https://medium.com/swlh/publish-your-cypress-test-report-with-github-actions-47248788713a
