@@ -129,3 +129,6 @@ npm run cypress:open
 # Continuous Integration with Github Actions and Cypress
 # https://andreybleme.com/2020-02-29/continuous-Integration-with-github-actions-and-cypress-end-to-end-tests/
 # https://medium.com/swlh/publish-your-cypress-test-report-with-github-actions-47248788713a
+
+
+open https://joel.github.io/SimplePhotoGallery/
