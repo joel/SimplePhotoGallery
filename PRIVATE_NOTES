@@ -130,6 +130,9 @@ npm run cypress:open
 # https://andreybleme.com/2020-02-29/continuous-Integration-with-github-actions-and-cypress-end-to-end-tests/
 # https://medium.com/swlh/publish-your-cypress-test-report-with-github-actions-47248788713a
 
+npm install --save-dev mocha cypress-multi-reporters mochawesome
+npm install --save-dev mochawesome-merge
+npm install --save-dev mochawesome-report-generator
 
 open https://joel.github.io/SimplePhotoGallery/
 
