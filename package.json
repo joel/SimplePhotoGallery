@@ -4,7 +4,7 @@
   "private": true,
   "dependencies": {
     "@capacitor-community/electron": "^1.3.2",
-    "@capacitor/android": "^2.4.5",
+    "@capacitor/android": "^2.4.6",
     "@capacitor/core": "2.4.5",
     "@capacitor/ios": "^2.4.5",
     "@ionic/pwa-elements": "^3.0.2",
