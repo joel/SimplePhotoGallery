@@ -28,3 +28,5 @@ cypress/fixtures/example.json
 cypress/fixtures/profile.json
 cypress/fixtures/users.json
 cypress/screenshots/examples/misc.spec.js/my-image.png
+.eslintcache
+cypress/screenshots/
